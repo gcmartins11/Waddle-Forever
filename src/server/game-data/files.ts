@@ -1235,7 +1235,7 @@ Unknown if its teleporting to village functions would be accurate`
     },
     {
       file: 'pirate_party/coffee.swf',
-      comment: 'Made by Cyan'
+      comment: 'Made by Cyan, fixed by lifeofgames477 (removed clickable chalkboard)'
     },
     {
       file: 'pet_nov07.swf',
