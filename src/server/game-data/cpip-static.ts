@@ -373,5 +373,6 @@ export const CPIP_STATIC_FILES: RouteRefMap = {
   'play/v2/content/local/en/catalogues/ninja.swf': 'archives:MANov2008.swf',
   'play/v2/content/global/rooms/boxdimension.swf': 'archives:RoomsParty2-AprilFoolsParty2009.swf',
   'play/v2/content/local/en/news/papers/forms/news.swf': 'svanilla:media/play/v2/content/local/en/news/forms/news.swf',
-  'community/flash/activities.xml': 'archives:CommunityFlashActivities.xml'
+  'community/flash/activities.xml': 'archives:CommunityFlashActivities.xml',
+  'play/v2/content/global/rooms/lake.swf': 'recreation:lake_no_ladder.swf'
 };

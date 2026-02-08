@@ -2000,6 +2000,10 @@ Unknown if its teleporting to village functions would be accurate`
     {
       file: 'winter_fiesta_2007/pizza.swf',
       comment: 'Made by Cyan'
+    },
+    {
+      file: 'lake_no_ladder.swf',
+      comment: 'Made by Resol van Lemy'
     }
   ],
   [MOD]: [

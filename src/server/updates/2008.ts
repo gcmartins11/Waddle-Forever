@@ -1006,7 +1006,6 @@ export const UPDATES_2008: Update[] = [
       boiler: 'archives:RoomsBoiler-January2010.swf',
       attic: 'archives:RoomsAttic.swf',
       sport: 'archives:RoomsSport_2.swf',
-      lake: 'slegacy:media/play/v2/content/global/rooms/lake.swf',
       cavemine: 'slegacy:media/play/v2/content/global/rooms/cavemine.swf',
       dojo: 'recreation:dojo_cpip_start.swf',
       shiphold: 'slegacy:media/play/v2/content/global/rooms/shiphold.swf',
