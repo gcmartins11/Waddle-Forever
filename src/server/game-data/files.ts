@@ -1996,6 +1996,10 @@ Unknown if its teleporting to village functions would be accurate`
     {
       file: 'adventure_09/hunt_ui.swf',
       comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'winter_fiesta_2007/pizza.swf',
+      comment: 'Made by Cyan'
     }
   ],
   [MOD]: [

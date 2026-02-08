@@ -37,12 +37,14 @@ export const UPDATES_2007: Update[] = [
         rooms: {
           'village': 'archives:Village40.swf',
           forts: 'recreation:winter_fiesta_2007/forts.swf',
-          coffee: 'recreation:winter_fiesta_2007/coffee.swf'
+          coffee: 'recreation:winter_fiesta_2007/coffee.swf',
+          pizza: 'recreation:winter_fiesta_2007/pizza.swf'
         },
         music: {
           'village': 206,
           forts: 206,
-          coffee: 206
+          coffee: 206,
+          pizza: 206
         }
       }
     }
