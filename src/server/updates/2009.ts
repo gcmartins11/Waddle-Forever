@@ -1931,8 +1931,15 @@ export const UPDATES_2009: Update[] = [
           party: 253,
           party2: 252
         },
+        prices: {
+          9045: 0
+        },
         globalChanges: {
-          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf'
+          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf',
+          'scavenger_hunt/hunt_ui.swf': ['recreation:halloween_2009/hunt_ui.swf', 'halloween_hunt']
+        },
+        scavengerHunt2010: {
+          iconFileId: 'recreation:halloween_2008/hunt_icon.swf'
         }
       }
     }

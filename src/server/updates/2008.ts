@@ -2103,9 +2103,16 @@ export const UPDATES_2008: Update[] = [
           sport: 252,
           town: 251
         },
+        prices: {
+          9006: 0
+        },
         globalChanges: {
           'igloo/assets/igloo_background.swf': 'recreation:halloween_2008/igloo_background.swf',
-          'telescope/empty.swf': 'recreation:telescope/far_halloween.swf'
+          'telescope/empty.swf': 'recreation:telescope/far_halloween.swf',
+          'scavenger_hunt/hunt_ui.swf': ['recreation:halloween_2008/hunt_ui.swf', 'halloween_hunt']
+        },
+        scavengerHunt2010: {
+          iconFileId: 'recreation:halloween_2008/hunt_icon.swf'
         }
       }
     }

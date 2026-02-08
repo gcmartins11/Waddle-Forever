@@ -2004,6 +2004,18 @@ Unknown if its teleporting to village functions would be accurate`
     {
       file: 'lake_no_ladder.swf',
       comment: 'Made by Resol van Lemy'
+    },
+    {
+      file: 'halloween_2008/hunt_icon.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'halloween_2008/hunt_ui.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'halloween_2009/hunt_ui.swf',
+      comment: 'Made by Doubleuman'
     }
   ],
   [MOD]: [
