@@ -1657,6 +1657,8 @@ export const UPDATES_2009: Update[] = [
         },
         globalChanges: {
           'scavenger_hunt/hunt_ui.swf': ['archives:Sensei_Fire_Hunt_hunt_closeup.swf', 'easter_egg_hunt', 'easter_hunt'],
+          'telescope/empty.swf': 'recreation:fire_hunt/telescope.swf',
+          'binoculars/empty.swf': 'recreation:fire_hunt/binoculars.swf'
         },
         scavengerHunt2010: {
           iconFileId: 'archives:Sensei_Fire_Hunt_hunt_icon.swf'

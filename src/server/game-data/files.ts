@@ -2016,6 +2016,14 @@ Unknown if its teleporting to village functions would be accurate`
     {
       file: 'halloween_2009/hunt_ui.swf',
       comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'fire_hunt/telescope.swf',
+      comment: 'Made by lifeofgames477'
+    },
+    {
+      file: 'fire_hunt/binoculars.swf',
+      comment: 'Made by lifeofgames477'
     }
   ],
   [MOD]: [
