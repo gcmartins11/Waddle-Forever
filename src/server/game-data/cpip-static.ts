@@ -8,7 +8,6 @@ import { RouteRefMap } from ".";
 export const CPIP_STATIC_FILES: RouteRefMap = {
   'en/web_service/cover.json': 'slegacy:play/en/web_service/cover.json',
   'en/web_service/epf.json': 'slegacy:play/en/web_service/epf.json',
-  'en/web_service/games.json': 'slegacy:play/en/web_service/games.json',
   'en/web_service/polaroids.json': 'slegacy:play/en/web_service/polaroids.json',
   'web_service/weblogger.json': 'slegacy:play/web_service/weblogger.json',
   'es/web_service/cover.json': 'slegacy:play/es/web_service/cover.json',
@@ -374,5 +373,7 @@ export const CPIP_STATIC_FILES: RouteRefMap = {
   'play/v2/content/global/rooms/boxdimension.swf': 'archives:RoomsParty2-AprilFoolsParty2009.swf',
   'play/v2/content/local/en/news/papers/forms/news.swf': 'svanilla:media/play/v2/content/local/en/news/forms/news.swf',
   'community/flash/activities.xml': 'archives:CommunityFlashActivities.xml',
-  'play/v2/content/global/rooms/lake.swf': 'recreation:lake_no_ladder.swf'
+  'play/v2/content/global/rooms/lake.swf': 'recreation:lake_no_ladder.swf',
+  'play/v2/games/fish/bootstrap.swf': 'archives:GamesIceFishingBootstrap-2011.swf',
+  'play/v2/games/fish/IceFishing.swf': 'archives:GamesIceFishingMain-2011.swf'
 };

@@ -1078,6 +1078,9 @@ export const UPDATES_2008: Update[] = [
     iglooList: {
       file: 'recreation:igloo_music/cpip_start.swf',
       hidden: true
+    },
+    gameMusic: {
+      fish: 103
     }
   },
   {

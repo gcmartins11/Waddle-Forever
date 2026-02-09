@@ -154,7 +154,7 @@ export const GAME_CRUMBS: Record<string, {
     "fish": {
       "name": "Ice Fishing",
       "room_id": "904",
-      "music_id": "0",
+      "music_id": "103",
       "stamp_group_id": "52",
       "path": "fish\/bootstrap.swf",
       "is_as3": false,

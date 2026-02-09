@@ -1139,5 +1139,7 @@ export const AS3_STATIC_FILES: RouteRefMap = {
   'play/v2/content/global/close_ups/lighthouse_telescope.swf': 'archives:MedievalParty2012telescope.swf',
   'play/v2/content/local/en/close_ups/mdlv1.swf': 'unknown:medieval2012/mdlv1.swf',
   'play/v2/content/local/en/close_ups/mdlv2.swf': 'unknown:medieval2012/mdlv2.swf',
-  'play/v2/content/global/avatar/sprites/herbert.swf': 'svanilla:media/play/v2/content/global/avatar/sprites/herbert.swf'
+  'play/v2/content/global/avatar/sprites/herbert.swf': 'svanilla:media/play/v2/content/global/avatar/sprites/herbert.swf',
+  'play/v2/games/fish/bootstrap.swf': 'slegacy:media/play/v2/games/fish/bootstrap.swf',
+  'play/v2/games/fish/IceFishing.swf': 'slegacy:media/play/v2/games/fish/IceFishing.swf'
 }

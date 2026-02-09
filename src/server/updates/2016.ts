@@ -42,6 +42,9 @@ export const UPDATES_2016: Update[] = [
       shop: 'svanilla:media/play/v2/content/global/rooms/shop.swf',
       village: 'svanilla:media/play/v2/content/global/rooms/village.swf'
     },
+    gameMusic: {
+      fish: 0
+    },
     music: {
       town: 581,
       coffee: 429,

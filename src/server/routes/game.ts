@@ -167,6 +167,9 @@ export function createHttpServer(settingsManager: SettingsManager): HttpServer {
   server.getData('play/en/web_service/game_configs/games.json', (s) => {
     return getGamesJson(s.settings.version);
   });
+  server.getData('en/web_service/games.json', (s) => {
+    return getGamesJson(s.settings.version);
+  });
   server.getData('play/en/web_service/game_configs/game_strings.json', (s) => {
     return getGameStrings(s.settings.version);
   });
