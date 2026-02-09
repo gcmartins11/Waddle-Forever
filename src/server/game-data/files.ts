@@ -2024,6 +2024,10 @@ Unknown if its teleporting to village functions would be accurate`
     {
       file: 'fire_hunt/binoculars.swf',
       comment: 'Made by lifeofgames477'
+    },
+    {
+      file: 'help.swf',
+      comment: 'Made by lifeofgames477'
     }
   ],
   [MOD]: [

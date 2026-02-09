@@ -2182,7 +2182,11 @@ export const UPDATES_2008: Update[] = [
       dojo: 21,
       dojoext: 21
     },
-    map: 'archives:Map2008-2011Stadium.swf'
+    map: 'archives:Map2008-2011Stadium.swf',
+    miscComments: ['The settings menu is updated'],
+    globalChanges: {
+      'content/help.swf': 'slegacy:media/play/v2/content/global/content/help.swf',
+    }
   },
   {
     date: '2008-11-17',
