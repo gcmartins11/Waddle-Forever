@@ -1,10 +1,10 @@
 /** Module handles information of all the files stored in the media folder */
 
 import path from "path";
-import { IS_DEV } from "../../common/constants";
+import { IS_DEV } from "@common/constants";
 import { PACKAGE_INFO } from "./package-info";
 import { PackageName } from "./packages";
-import { DEFAULT_DIRECTORY, getFilesInDirectory, iterateEntries } from "../../common/utils";
+import { DEFAULT_DIRECTORY, getFilesInDirectory, iterateEntries } from "@common/utils";
 
 /**
  * File reference is a term used in this code base to refer a string in the format
@@ -247,6 +247,18 @@ would need to investigated`
     {
       file: 'PlayStartSwfStart.swf',
       comment: 'Removed the tracking service, which downloads an external SWF which has no useful functionality. Required for truly offline play'
+    },
+    {
+      file: 'Paper86.swf',
+      comment: 'Adds all missing items from April to mid-July 2008.'
+    },
+    {
+      file: 'ClientLoad2009-06-26.swf',
+      comment: 'Removed domain check.'
+    },
+    {
+      file: 'ClientLoginJun2009.swf',
+      comment: 'Removed hardcoded domains'
     }
   ],
   [APPROXIMATION]: [
@@ -512,6 +524,10 @@ so that it works with newer clients (newer being around 2007)`,
     {
       file: 'club_penguin_2011.swf',
       comment: 'The vanilla media club_penguin.swf, but with the background changed to white to match the website'
+    },
+    {
+      file: 'login_no_101_days_of_fun.swf',
+      comment: 'By Randomon, removed 101 days of fun on start screen. not accurate for all dates, needs more research'
     }
   ],
   [RECREATION]: [
@@ -1223,7 +1239,7 @@ Unknown if its teleporting to village functions would be accurate`
     },
     {
       file: 'pirate_party/coffee.swf',
-      comment: 'Made by Cyan'
+      comment: 'Made by Cyan, fixed by lifeofgames477 (removed clickable chalkboard)'
     },
     {
       file: 'pet_nov07.swf',
@@ -1294,20 +1310,12 @@ Unknown if its teleporting to village functions would be accurate`
       comment: 'Made by Blue Kirby. Theoretical first Post-CPIP interface, built on top of the recreation from January 2009 but without the membership badge'
     },
     {
-      file: 'interfaces/membership_badge_3.swf',
-      comment: 'Made by Blue Kirby. Built on top of the October 2009 interface but removing the owned igloos functionality'
-    },
-    {
       file: 'interfaces/2010_may.swf',
       comment: 'Made by Supermanover and Blue Kirby. Initially, Super removed the stamps from the legacy media modified interface that was in WF. Blue Kirby removed the owned igloo functionality'
     },
     {
       file: 'interfaces/2010_july.swf',
       comment: 'Made by Blue Kirby. Built on top of the modified lgeacy media interface, removing the owned igloos functionality'
-    },
-    {
-      file: 'client_igloo_cpip.swf',
-      comment: 'Made by Blue Kirby, edit which removes the owned igloos button'
     },
     {
       file: 'startscreen/cpip.swf',
@@ -1976,6 +1984,54 @@ Unknown if its teleporting to village functions would be accurate`
     {
       file: 'rink_2008_sky.swf',
       comment: 'Made by lifeofgames477. Used the vectorized recreation from ChrisCPI and changed the sky'
+    },
+    {
+      file: 'summer_kickoff_2007/cove.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'summer_kickoff_2007/cove_update.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'adventure_09/hunt_icon.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'adventure_09/hunt_ui.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'winter_fiesta_2007/pizza.swf',
+      comment: 'Made by Cyan'
+    },
+    {
+      file: 'lake_no_ladder.swf',
+      comment: 'Made by Resol van Lemy'
+    },
+    {
+      file: 'halloween_2008/hunt_icon.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'halloween_2008/hunt_ui.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'halloween_2009/hunt_ui.swf',
+      comment: 'Made by Doubleuman'
+    },
+    {
+      file: 'fire_hunt/telescope.swf',
+      comment: 'Made by lifeofgames477'
+    },
+    {
+      file: 'fire_hunt/binoculars.swf',
+      comment: 'Made by lifeofgames477'
+    },
+    {
+      file: 'help.swf',
+      comment: 'Made by lifeofgames477'
     }
   ],
   [MOD]: [
@@ -2007,24 +2063,16 @@ Originally from solero legacy-media, modified to work in the flat domain any por
       comment: 'Copy of boots.swf but in 30 FPS'
     },
     {
-      file: 'dependencies_scavenger_hunt.json',
-      comment: 'File to load the Scavenger Hunt. Should be integrated in the future'
-    },
-    {
       file: 'dynamic_igloo_music.swf',
       comment: 'File that loads the igloo music from a XML file. Originally by Ben, refined by Randomno to include bold names and remove pagination'
-    },
-    {
-      file: 'fair_dependencies.json',
-      comment: 'File to load the Fair dependency. Should be refactor as an "icon" dependency instead, similarly to Pre-CPIP eggs'
     },
     {
       file: 'fair_icon_adder.swf',
       comment: 'Modified from Ben\'s scavenger hunt mod'
     },
     {
-      file: 'load30.swf',
-      comment: 'Copy of the pre-CPIP load.swf, but in 30 FPS, and the code for loading the chat swf slightly altered to accommodate for it'
+      file: 'idle_cancel.swf',
+      comment: 'A custom dependency that removes the idle disconnect timer. Only loads when the "remove_idle" setting is active.'
     },
     {
       file: 'news_config.xml',
@@ -2033,6 +2081,14 @@ Originally from solero legacy-media, modified to work in the flat domain any por
     {
       file: 'scavenger_hunt_2010.swf',
       comment: 'By Ben, SWF that adds the scavenger hunt icon'
+    },
+    {
+      file: 'load.swf',
+      comment: 'From mammoth. Used dynamic constant replacement. Overrides the XMLSocket.connect function to always connect to IP:WORLD PORT (because of the hardcoded values in join.swf); Overrides the LoadVars.sendAndLoad function to omit "support.clubpenguin.com" from the url (also for join.swf); Overrides String.split to make it think the URL is play.clubpenguin.com (Can be used to bypass domain checks and reduce the amount of modified SWFs).'
+    },
+    {
+      file: 'load30.swf',
+      comment: 'Copy of tool:load.swf, but in 30 FPS, and the code for loading the chat swf slightly altered to accommodate for it'
     }
   ],
   [UNKNOWN]: [
@@ -2140,7 +2196,7 @@ function enforceDocumentationCorrectness(): void {
       documentedFiles.add(cleanPath(doc.file))
     });
     files.forEach((file) => {
-      if (!documentedFiles.has(file)) {
+      if (!documentedFiles.has(file) && !file.endsWith('.DS_Store')) {
         missingFiles.push(path.join(key, file));
       }
     })

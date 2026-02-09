@@ -848,7 +848,9 @@ export const UPDATES_2010: Update[] = [
       // engine that has EPF and stuff
       'play/v2/client/engine.swf': 'approximation:engine.swf',
       // interface with EPF phone
-      'play/v2/client/interface.swf': 'recreation:interfaces/2010_may.swf'
+      'play/v2/client/interface.swf': 'recreation:interfaces/2010_may.swf',
+      'play/v2/client/shell.swf': 'approximation:shell.swf',
+      'play/v2/client/load.swf': 'archives:ClientLoad2010-11-25.swf'
     },
     localChanges: {
       'forms/moderator.swf': {
@@ -917,13 +919,25 @@ export const UPDATES_2010: Update[] = [
     rooms: {
       agentcom: 'archives:RoomsAgentcom-June2010_3.swf',
       shack: 'archives:RoomsShack-June2010.swf'
-    }
+    },
+    eliteGearItems: [
+      1148,
+      1149,
+      2021,
+      4223,
+      6042,
+      1150,
+      2022,
+      4224,
+      6043
+    ]
   },
   {
     date: '2010-06-17',
     roomComment: 'The Forest now has a path to the Hidden Lake',
     rooms: {
-      forest: 'archives:RoomsForest_3.swf'
+      forest: 'archives:RoomsForest_3.swf',
+      lake: 'slegacy:media/play/v2/content/global/rooms/lake.swf'
     }
   },
   {
@@ -1069,6 +1083,17 @@ export const UPDATES_2010: Update[] = [
         },
         startscreens: ['archives:LoginMusicJam2010(1).swf', 'archives:LoginMusicJam2010(2).swf']
       }
+    }
+  },
+  {
+    date: '2010-07-12',
+    gameUpgrades: {
+      newItems: [
+        5071,
+        5072,
+        5070
+      ],
+      removed: []
     }
   },
   {
@@ -1638,6 +1663,17 @@ export const UPDATES_2010: Update[] = [
       { display: 'You Rock!', id: 293, pos: [2, 1] },
       { display: 'The Ringmaster', id: 297, pos: [2, 2] },
       { display: 'For Great Justice', id: 32, pos: [7, 2] }
+    ]
+  },
+  {
+    date: '2010-08-23',
+    eliteGearItems: [
+      1170,
+      1171,
+      3055,
+      5075,
+      4258,
+      6049
     ]
   },
   {
@@ -3029,6 +3065,15 @@ export const UPDATES_2010: Update[] = [
   {
     date: '2010-11-05',
     clothingCatalog: 'archives:November10Style.swf'
+  },
+  {
+    date: '2010-11-08',
+    eliteGearItems: [
+      1201,
+      3061,
+      4282,
+      6057
+    ]
   },
   {
     date: '2010-11-11',

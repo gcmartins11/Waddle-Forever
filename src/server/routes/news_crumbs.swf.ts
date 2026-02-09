@@ -1,6 +1,6 @@
-import { emitSwf } from "../../common/flash/emitter";
-import { monthNames } from "../../common/utils";
-import { Action, createBytecode, PCodeRep } from "../../common/flash/avm1";
+import { emitCrumbSwf } from "@common/flash/emitter";
+import { monthNames } from "@common/utils";
+import { Action, createBytecode, PCodeRep } from "@common/flash/avm1";
 import { findEarliestDateHitIndex } from "../game-data";
 import { As3Newspaper, BoilerRoomPaper, PreBoilerRoomPaper } from "../game-data/newspapers";
 import { NEWSPAPER_TIMELINE } from "../timelines/newspapers";
@@ -108,5 +108,5 @@ export function getNewsCrumbsSwf(version: Version): Buffer {
     code.push(...generateNewsArrayAdd(i, newspaperIndex - i, newspaper.date, newspaper.info.title))
   }
 
-  return Buffer.from(emitSwf(createBytecode(code)));
+  return Buffer.from(emitCrumbSwf(createBytecode(code)));
 }

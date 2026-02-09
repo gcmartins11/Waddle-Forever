@@ -709,7 +709,7 @@ export const UPDATES_2009: Update[] = [
     date: '2009-03-24',
     miscComments: ['The membership badge now features levels'],
     fileChanges: {
-      'play/v2/client/interface.swf': 'recreation:interfaces/membership_badge_3.swf'
+      'play/v2/client/interface.swf': 'archives:ClientInterface-June2009.swf'
     }
   },
   {
@@ -742,6 +742,17 @@ export const UPDATES_2009: Update[] = [
       cove: 'archives:RoomsCove.swf',
       dock: 'archives:RoomsDock_1.swf',
       lodge: 'archives:RoomsLodge.swf'
+    },
+    gameUpgrades: {
+      newItems: [
+        701,
+        702,
+        703,
+        711,
+        712,
+        321
+      ],
+      removed: []
     },
     martialArtworks: 'archives:MAMar2009.swf',
     sportCatalog: 'archives:SASMar2009.swf'
@@ -877,6 +888,14 @@ export const UPDATES_2009: Update[] = [
     roomComment: 'Game Upgrades are added to the Ski Hill',
     rooms: {
       mtn: 'archives:RoomsMtn-January2010.swf'
+    },
+    gameUpgrades: {
+      newItems: [
+        5021,
+        5047,
+        5046
+      ],
+      removed: []
     }
   },
   {
@@ -1152,7 +1171,13 @@ export const UPDATES_2009: Update[] = [
           town: 267,
           party: 267
         },
-        startscreens: ['archives:AdventureParty2009ENLoginScreen1.swf', 'archives:AdventureParty2009ENLoginScreen2.swf']
+        startscreens: ['archives:AdventureParty2009ENLoginScreen1.swf', 'archives:AdventureParty2009ENLoginScreen2.swf'],
+        scavengerHunt2010: {
+          iconFileId: 'recreation:adventure_09/hunt_icon.swf',
+        },
+        globalChanges: {
+          'scavenger_hunt/hunt_ui.swf': ['recreation:adventure_09/hunt_ui.swf', 'easter_egg_hunt', 'easter_hunt']
+        }
       }
     },
     stagePlay: {
@@ -1188,6 +1213,12 @@ export const UPDATES_2009: Update[] = [
   },
   {
     date: '2009-06-26',
+    fileChanges: {
+      'play/v2/client/load.swf': 'fix:ClientLoad2009-06-26.swf',
+      'play/v2/client/login.swf': 'fix:ClientLoginJun2009.swf',
+      'play/v2/client/shell.swf': 'archives:ClientShell_June_2009.swf'
+
+    },
     iglooList: [
       { display: 'Viking Opera', id: 41, pos: [1, 1] },
       { display: 'Mountain Dojo', id: 21, pos: [2, 1] },
@@ -1197,6 +1228,14 @@ export const UPDATES_2009: Update[] = [
     rooms: {
       // game upgrades
       dance: 'archives:RoomsDance_2.swf'
+    },
+    gameUpgrades: {
+      newItems: [
+        5037,
+        5039,
+        5038
+      ],
+      removed: []
     }
   },
   {
@@ -1298,6 +1337,12 @@ export const UPDATES_2009: Update[] = [
       { display: 'All-Access Pass', id: 272, pos: [3, 2] },
       { display: 'Rocking Pizza', id: 271, pos: [5, 2] }
     ]
+  },
+  {
+    date: '2009-08-05',
+    fileChanges: {
+      'play/v2/client/shell.swf': 'archives:ClientShell2009-08-05.swf'
+    }
   },
   {
     date: '2009-08-07',
@@ -1574,6 +1619,12 @@ export const UPDATES_2009: Update[] = [
     }
   },
   {
+    date: '2009-09-13',
+    fileChanges: {
+      'play/v2/client/login.swf': 'approximation:login_no_101_days_of_fun.swf'
+    }
+  },
+  {
     date: '2009-09-14',
     migrator: false,
     end: ['party'],
@@ -1612,6 +1663,8 @@ export const UPDATES_2009: Update[] = [
         },
         globalChanges: {
           'scavenger_hunt/hunt_ui.swf': ['archives:Sensei_Fire_Hunt_hunt_closeup.swf', 'easter_egg_hunt', 'easter_hunt'],
+          'telescope/empty.swf': 'recreation:fire_hunt/telescope.swf',
+          'binoculars/empty.swf': 'recreation:fire_hunt/binoculars.swf'
         },
         scavengerHunt2010: {
           iconFileId: 'archives:Sensei_Fire_Hunt_hunt_icon.swf'
@@ -1886,8 +1939,15 @@ export const UPDATES_2009: Update[] = [
           party: 253,
           party2: 252
         },
+        prices: {
+          9045: 0
+        },
         globalChanges: {
-          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf'
+          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf',
+          'scavenger_hunt/hunt_ui.swf': ['recreation:halloween_2009/hunt_ui.swf', 'halloween_hunt']
+        },
+        scavengerHunt2010: {
+          iconFileId: 'recreation:halloween_2008/hunt_icon.swf'
         }
       }
     }

@@ -24,6 +24,7 @@ import { MASCOTS } from './game-data/mascots';
 import { Table } from './handlers/play/table';
 import { FindFourTable } from './handlers/play/find-four';
 import { MancalaTable } from './handlers/play/mancala';
+import { ITEM_RELEASES } from './timelines/items';
 
 type ServerType = 'Login' | 'World';
 
@@ -129,7 +130,7 @@ class MatchmakingRoom {
   private _matchmaker: MatchMaker;
   private _players: Client[];
   private _time = 0;
-  private _timer: NodeJS.Timer
+  private _timer: NodeJS.Timeout;
 
   constructor(matchmaker: MatchMaker) {
     this._matchmaker = matchmaker;
@@ -348,7 +349,7 @@ class Bakery {
 
   private _multiplierPenguins: Set<number> = new Set();
   private _multiplierCount: number = 0;
-  private _countInterval: NodeJS.Timer | null = null;
+  private _countInterval: NodeJS.Timeout | null = null;
 
   private _server: Server;
 
@@ -632,6 +633,10 @@ export class Server {
     return this._playersById.get(id);
   }
 
+  penguinExists(name: string): boolean {
+    return db.penguinExists(name);
+  }
+
   /** Remove a player from the online map */
   untrackPlayer(id: number): void {
     this._playersById.delete(id);
@@ -641,7 +646,7 @@ export class Server {
     const date = this.getVirtualDate(0).getTime();
 
     if (data === undefined) {
-      data = Client.create(capitalizeName(name), {
+      data = Client.create(name, 1, {
         is_member: this.settings.always_member,
         virtualRegistrationTimestamp: date
       });
@@ -770,12 +775,23 @@ export class Server {
   getItemsFiltered(items: number[]) {
     // pre-cpip engines have limited items, after
     // that global_crumbs allow having all the items
+
     if (isLower(this.settings.version, getDate('cpip'))) {
       const itemSet = findInVersionStrict(this.settings.version, CLIENT_ITEMS_TIMELINE)
-      return items.filter((value) => itemSet.has(value));
-    } else {
-      return items;
+      items = items.filter((value) => itemSet.has(value));
     }
+
+    // if (this.settings.inventory_accuracy) {
+    //   return items.filter(id => {
+    //     const entry = ITEM_RELEASES.get(id);
+    //     if (entry === undefined) {
+    //       return false;
+    //     } else {
+    //       return isGreaterOrEqual(this.settings.version, entry);
+    //     }
+    //   });
+    // }
+    return items;
   }
 
   getAllPlayersInfo() {
@@ -1140,11 +1156,13 @@ export class Client {
     this._server.trackPlayer(id, this);
   }
 
-  static create (name: string, params: DefaultPenguinParams = {}): [PenguinData, number] {
-    const defaultPenguin = Penguin.getDefault(0, name, params).serialize();
+  static create (name: string, color: number = 1, params: DefaultPenguinParams = {}): [PenguinData, number] {
+    const capitalizedName = capitalizeName(name);
+    const defaultPenguin = Penguin.getDefault(0, capitalizedName, params).serialize();
     return db.add<PenguinData>(Databases.Penguins, {
       ...defaultPenguin,
-      name,
+      name: capitalizedName,
+      color,
       mascot: 0
     });
   }

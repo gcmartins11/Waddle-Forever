@@ -394,6 +394,10 @@ export const UPDATES_2008: Update[] = [
     }
   },
   {
+    date: '2008-02-28',
+    sportCatalog: 'archives:Sport_0802.swf'
+  },
+  {
     date: '2008-02-29',
     miscComments: ['More pieces show up at the Beach'],
     temp: {
@@ -666,6 +670,7 @@ export const UPDATES_2008: Update[] = [
   {
     date: '2008-04-25',
     end: ['migrator-reconstruction'],
+    sportCatalog: 'archives:SportCatalog_0804.swf',
     temp: {
       party: {
         partyName: 'Rockhopper & Yarr\'s Arr-ival Parr-ty',
@@ -911,6 +916,10 @@ export const UPDATES_2008: Update[] = [
     end: ['earthquake']
   },
   {
+    date: '2008-06-27',
+    sportCatalog: 'archives:SASJun2008.swf'
+  },
+  {
     date: '2008-07-04',
     clothingCatalog: 'archives:July08Style.swf'
   },
@@ -918,7 +927,10 @@ export const UPDATES_2008: Update[] = [
     date: '2008-07-11',
     stagePlay: {
       name: 'Squidzoid vs. Shadow Guy and Gamma Gal',
-      costumeTrunk: null,
+      costumeTrunk: {
+        newItems: [],
+        removedItems: []
+      },
       hide: true,
       script: [
         { note: "Squidzoid vs Shadow Guy & Gamma Gal" },
@@ -994,7 +1006,6 @@ export const UPDATES_2008: Update[] = [
       boiler: 'archives:RoomsBoiler-January2010.swf',
       attic: 'archives:RoomsAttic.swf',
       sport: 'archives:RoomsSport_2.swf',
-      lake: 'slegacy:media/play/v2/content/global/rooms/lake.swf',
       cavemine: 'slegacy:media/play/v2/content/global/rooms/cavemine.swf',
       dojo: 'recreation:dojo_cpip_start.swf',
       shiphold: 'slegacy:media/play/v2/content/global/rooms/shiphold.swf',
@@ -1017,7 +1028,7 @@ export const UPDATES_2008: Update[] = [
       'play/v2/client/engine.swf': 'unknown:engine_2009.swf',
       'play/v2/client/interface.swf': 'recreation:interfaces/2008_july.swf',
       'play/v2/client/login.swf': 'recreation:login_cpip.swf',
-      'play/v2/client/igloo.swf': 'recreation:client_igloo_cpip.swf',
+      'play/v2/client/igloo.swf': 'archives:ClientIgloo2009-04-02.swf',
       'play/v2/content/global/binoculars/empty.swf': 'slegacy:media/play/v2/content/global/binoculars/empty.swf',
       'play/v2/content/global/telescope/empty.swf': 'slegacy:media/play/v2/content/global/telescope/empty.swf',
       'play/v2/content/global/igloo/assets/igloo_background.swf': 'slegacy:media/play/v2/content/global/igloo/assets/igloo_background.swf',
@@ -1067,6 +1078,9 @@ export const UPDATES_2008: Update[] = [
     iglooList: {
       file: 'recreation:igloo_music/cpip_start.swf',
       hidden: true
+    },
+    gameMusic: {
+      fish: 103
     }
   },
   {
@@ -2092,9 +2106,16 @@ export const UPDATES_2008: Update[] = [
           sport: 252,
           town: 251
         },
+        prices: {
+          9006: 0
+        },
         globalChanges: {
           'igloo/assets/igloo_background.swf': 'recreation:halloween_2008/igloo_background.swf',
-          'telescope/empty.swf': 'recreation:telescope/far_halloween.swf'
+          'telescope/empty.swf': 'recreation:telescope/far_halloween.swf',
+          'scavenger_hunt/hunt_ui.swf': ['recreation:halloween_2008/hunt_ui.swf', 'halloween_hunt']
+        },
+        scavengerHunt2010: {
+          iconFileId: 'recreation:halloween_2008/hunt_icon.swf'
         }
       }
     }
@@ -2161,7 +2182,11 @@ export const UPDATES_2008: Update[] = [
       dojo: 21,
       dojoext: 21
     },
-    map: 'archives:Map2008-2011Stadium.swf'
+    map: 'archives:Map2008-2011Stadium.swf',
+    miscComments: ['The settings menu is updated'],
+    globalChanges: {
+      'content/help.swf': 'slegacy:media/play/v2/content/global/content/help.swf',
+    }
   },
   {
     date: '2008-11-17',
@@ -2173,6 +2198,11 @@ export const UPDATES_2008: Update[] = [
     },
     music: {
       dojoext: 0
+    },
+    martialArtworks: {
+      announce: false,
+      newItems: [4034],
+      removedItems: []
     }
   },
   {

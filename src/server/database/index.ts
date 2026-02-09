@@ -230,6 +230,8 @@ class JsonDatabase {
         return '1.4.2';
       case '1.4.2':
         return '1.4.3';
+      case '1.4.3':
+        return '1.4.4';
       default:
         throw new Error('Invalid database version: ' + version);
     }
@@ -303,6 +305,10 @@ class JsonDatabase {
     }
 
     return undefined;
+  }
+
+  penguinExists(name: string): boolean {
+    return this.get<PenguinData>(Databases.Penguins, 'name', name) !== undefined
   }
 
   add<T>(database: Databases, value: T): [T, number] {
@@ -479,6 +485,7 @@ export interface PenguinData {
   /** If completed battle of doom or not */
   battleOfDoom: boolean;
   medieval2012Message?: number;
+  noSave?: boolean;
 }
 
 export default db;

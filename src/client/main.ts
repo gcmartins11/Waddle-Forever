@@ -1,6 +1,6 @@
 import path from 'path'
 
-import { app, BrowserWindow, session, dialog } from "electron";
+import { app, BrowserWindow, dialog } from "electron";
 import log from "electron-log";
 import { autoUpdater } from "electron-updater";
 import { startDiscordRPC } from "./discord";
@@ -8,14 +8,14 @@ import loadFlashPlugin from "./flash-loader";
 import startMenu from "./menu";
 import createStore from "./store";
 import createWindow, { loadMain } from "./window";
-import startServer from "../server/server";
-import settingsManager from "../server/settings";
+import startServer from "@server/server";
+import settingsManager from "@server/settings";
 import { showWarning } from "./warning";
 import { setLanguageInStore } from "./discord/localization/localization";
 import electronIsDev from "electron-is-dev";
 import { AdminError, downloadMediaFolder, startMedia } from "./media";
-import { GlobalSettings } from '../common/utils';
-import { VERSION } from '../common/version';
+import { GlobalSettings } from '@common/utils';
+import { VERSION } from '@common/version';
 
 log.initialize();
 
@@ -143,18 +143,6 @@ app.on('ready', async () => {
   if (!electronIsDev) {
     startDiscordRPC(store, mainWindow);
   }
-
-  session.defaultSession.webRequest.onBeforeRequest((details, callback) => {
-    const url:URL = new URL(details.url);
-
-    if (url.pathname === "/play/v2/client/create.swf") {
-      dialog.showMessageBox({ message: "You don't need to create accounts, simply type any username and password when logging in" });
-      loadMain(mainWindow, globalSettings, settingsManager);
-      return;
-    }
-
-    callback({});
-  });
 });
 
 

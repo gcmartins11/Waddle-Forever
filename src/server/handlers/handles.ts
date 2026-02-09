@@ -1,4 +1,4 @@
-import { iterateEntries } from "../../common/utils";
+import { iterateEntries } from "@common/utils";
 
 /** Strings used to represent primitive types that can be used as an argument */
 export type TypePrimitiveIndicator = 'number' | 'string';
@@ -207,6 +207,7 @@ export enum Handle {
   GetBakeryState,
   SendEnterHopper,
   GetCookieInventory,
+  CheckNameOld,
   GetHockeyGame,
   MoveHockeyPuck,
   MoveHockeyPuckOld,
@@ -401,6 +402,7 @@ export const HANDLE_ARGUMENTS = {
   [Handle.GetBakeryState]: [],
   [Handle.SendEnterHopper]: ['string'],
   [Handle.GetCookieInventory]: [],
+  [Handle.CheckNameOld]: ['string'],
   [Handle.GetHockeyGame]: [],
   [Handle.MoveHockeyPuck]: ['number', 'number', 'number', 'number', 'number'],
   [Handle.MoveHockeyPuckOld]: ['number', 'number'],
@@ -628,7 +630,8 @@ const HANDLER_MAPPING: HandlerMapping = {
   },
   'm': {
     'sm': Handle.SendMessageOld,
-    'ss': Handle.SendSafeMessageOldAlt
+    'ss': Handle.SendSafeMessageOldAlt,
+    'checkName': Handle.CheckNameOld
   },
   'r': {
     'or': Handle.OpenIglooOld,

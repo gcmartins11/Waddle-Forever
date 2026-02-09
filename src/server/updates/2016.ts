@@ -42,6 +42,9 @@ export const UPDATES_2016: Update[] = [
       shop: 'svanilla:media/play/v2/content/global/rooms/shop.swf',
       village: 'svanilla:media/play/v2/content/global/rooms/village.swf'
     },
+    gameMusic: {
+      fish: 0
+    },
     music: {
       town: 581,
       coffee: 429,
@@ -98,7 +101,10 @@ export const UPDATES_2016: Update[] = [
       'play/v2/client/shell.swf': 'svanilla:media/play/v2/client/shell.swf',
       'play/v2/client/engine.swf': 'svanilla:media/play/v2/client/engine.swf',
       'play/v2/client/phone.swf': 'svanilla:media/play/v2/client/phone.swf',
-      'play/v2/client/club_penguin.swf': 'svanilla:media/play/v2/client/club_penguin.swf'
+      'play/v2/client/club_penguin.swf': 'svanilla:media/play/v2/client/club_penguin.swf',
+
+      'play/v2/games/pufflescape/HostEmulator.swf': 'svanilla:media/play/v2/games/pufflescape/HostEmulator.swf',
+      'play/v2/games/pufflescape/Main.swf': 'archives:GamesPufflescapeMain-20150909.swf'
     }
   }
 ];

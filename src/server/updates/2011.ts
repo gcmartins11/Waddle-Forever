@@ -12,7 +12,13 @@ export const UPDATES_2011: Update[] = [
   },
   {
     date: '2011-01-13',
-    sportCatalog: 'archives:SASJan2011.swf'
+    sportCatalog: 'archives:SASJan2011.swf',
+    eliteGearItems: [
+      1217,
+      4300,
+      3063,
+      5089
+    ]
   },
   {
     date: '2011-01-14',
@@ -1318,6 +1324,15 @@ export const UPDATES_2011: Update[] = [
     ]
   },
   {
+    date: '2011-04-28',
+    eliteGearItems: [
+      102,
+      3073,
+      4367,
+      6072
+    ]
+  },
+  {
     date: '2011-05-01',
     migrator: false
   },
@@ -2165,6 +2180,12 @@ export const UPDATES_2011: Update[] = [
       'play/v2/client/rooms_common.swf': 'svanilla:media/play/v2/client/rooms_common.swf',
       'play/v2/content/local/en/catalogues/dance.swf': 'archives:Game_Upgrades_Dance_2011.swf'
     },
+    gameUpgrades: {
+      newItems: [
+        5121
+      ],
+      removed: []
+    },
     rooms: {
       lounge: 'archives:RoomsLounge_4.swf',
 
@@ -2228,7 +2249,8 @@ export const UPDATES_2011: Update[] = [
         },
         globalChanges: {
           'scavenger_hunt/scavenger_hunt.swf': 'archives:CandyGhostScavengerHuntScavenger_hunt.swf',
-          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf'
+          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf',
+          'binoculars/empty.swf': 'archives:Halloween2012BinocularsStormy.swf'
         },
         startscreens: [ 'archives:HalloweenParty2011PreStartBillboards.swf', 'archives:HalloweenParty2011StartBillboards.swf' ],
         scavengerHunt2011: {

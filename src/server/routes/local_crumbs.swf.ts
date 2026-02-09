@@ -1,6 +1,6 @@
-import { iterateEntries } from "../../common/utils";
-import { Action, createBytecode, createJsonDeclaration, PCodeRep } from "../../common/flash/avm1";
-import { emitSwf } from "../../common/flash/emitter";
+import { iterateEntries } from "@common/utils";
+import { Action, createBytecode, createJsonDeclaration, PCodeRep } from "@common/flash/avm1";
+import { emitCrumbSwf } from "@common/flash/emitter";
 import { LOCAL_PATHS } from "../game-data/local-paths";
 import { Version } from "./versions";
 import { SAFE_MESSAGES } from "../game-data/safe-messages";
@@ -14,6 +14,7 @@ import { LOCAL_PATHS_TIMELINE, HUNT_TIMELINE } from "../timelines/crumbs";
 import { getMapForDate } from "../timelines";
 import { findInVersionStrict } from "../game-data";
 import { STAGE_TIMELINE } from "../timelines/stage";
+import serverList from "../servers";
 
 function getLocalPaths(version: Version) {
   const code: PCodeRep = [];
@@ -212,6 +213,30 @@ function getIglooCrumbs() {
   return code;
 }
 
+function getServerCrumbs() {
+  const code: PCodeRep = [
+    [Action.Push, "servers"],
+    [Action.Push, 0],
+    [Action.Push, "Object"],
+    Action.NewObject,
+    Action.DefineLocal
+  ];
+
+  serverList.forEach(server => {
+    code.push(
+      [Action.Push, "servers"],
+      Action.GetVariable,
+      [Action.Push, server.id],
+      [Action.Push, "name"],
+      [Action.Push, server.name],
+      [Action.Push, 1],
+      Action.InitObject,
+      Action.SetMember
+    )
+  })
+
+  return code;
+}
 
 function getLangError(): PCodeRep {
   return [
@@ -3781,11 +3806,12 @@ export function getLocalCrumbsSwf(version: Version): Buffer {
     [Action.Push, 1],
     Action.InitArray,
     Action.SetMember,
+    ...getServerCrumbs(),
     ...getStageScript(version),
     ...getHuntCrumbs(version)
   ];
 
   const bytecode = [...treverseMessages, ...createBytecode(code)];
 
-  return Buffer.from(emitSwf(new Uint8Array(bytecode)));
+  return Buffer.from(emitCrumbSwf(new Uint8Array(bytecode)));
 }
