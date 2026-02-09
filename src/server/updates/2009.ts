@@ -1619,6 +1619,12 @@ export const UPDATES_2009: Update[] = [
     }
   },
   {
+    date: '2009-09-13',
+    fileChanges: {
+      'play/v2/client/login.swf': 'approximation:login_no_101_days_of_fun.swf'
+    }
+  },
+  {
     date: '2009-09-14',
     migrator: false,
     end: ['party'],

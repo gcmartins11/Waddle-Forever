@@ -524,6 +524,10 @@ so that it works with newer clients (newer being around 2007)`,
     {
       file: 'club_penguin_2011.swf',
       comment: 'The vanilla media club_penguin.swf, but with the background changed to white to match the website'
+    },
+    {
+      file: 'login_no_101_days_of_fun.swf',
+      comment: 'By Randomon, removed 101 days of fun on start screen. not accurate for all dates, needs more research'
     }
   ],
   [RECREATION]: [
