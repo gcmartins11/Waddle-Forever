@@ -1069,7 +1069,7 @@ export const UPDATES_2012: Update[] = [
           "description": "Smoothie Smash",
           "parent_group_id": 8,
           "display": "Games : Smoothie Smash",
-          "group_id": 58,
+          "group_id": CategoryID.SmoothieSmash,
           "stamps": [
             {
               "stamp_id": 453,
