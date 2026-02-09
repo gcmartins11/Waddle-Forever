@@ -92,13 +92,13 @@ const allSettings: Setting[] = [
       update({ always_member: checked });
     }
   },
-  {
-    key: 'inventory_accuracy',
-    elementId: 'inventory-input',
-    onChange: ({ checked }) => {
-      update({ inventory_accuracy: checked });
-    }
-  },
+  // {
+  //   key: 'inventory_accuracy',
+  //   elementId: 'inventory-input',
+  //   onChange: ({ checked }) => {
+  //     update({ inventory_accuracy: checked });
+  //   }
+  // },
   {
     key: 'minified_website',
     elementId: 'js-website-input',

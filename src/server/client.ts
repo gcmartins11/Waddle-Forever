@@ -781,16 +781,16 @@ export class Server {
       items = items.filter((value) => itemSet.has(value));
     }
 
-    if (this.settings.inventory_accuracy) {
-      return items.filter(id => {
-        const entry = ITEM_RELEASES.get(id);
-        if (entry === undefined) {
-          return false;
-        } else {
-          return isGreaterOrEqual(this.settings.version, entry);
-        }
-      });
-    }
+    // if (this.settings.inventory_accuracy) {
+    //   return items.filter(id => {
+    //     const entry = ITEM_RELEASES.get(id);
+    //     if (entry === undefined) {
+    //       return false;
+    //     } else {
+    //       return isGreaterOrEqual(this.settings.version, entry);
+    //     }
+    //   });
+    // }
     return items;
   }
 
