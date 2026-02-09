@@ -932,6 +932,10 @@ export const UPDATES_2012: Update[] = [
             en: ['archives:UltimateJamScavengerHunt.swf', 'w.party.announcement', 'scavenger_hunt']
           }
         },
+        globalChanges: {
+          'telescope/telescope.swf': 'archives:Telescope-MusicJam2016.swf',
+          'binoculars/empty.swf': 'archives:Binoculars-MusicJam2016.swf'
+        },
         mapNote: 'archives:UltimateJam_Party_map_note.swf',
         partyIconFile: 'archives:UltimateJamScavengerHuntIcon.swf'
       }
@@ -1608,6 +1612,10 @@ export const UPDATES_2012: Update[] = [
           'archives:OperationBlackout2012Pre-Awareness.swf',
           'archives:SwfEpf-billboard-3-save-island.swf'
         ],
+        globalChanges: {
+          'binoculars/empty.swf': 'archives:Halloween2012BinocularsStormy.swf',
+          'telescope/telescope.swf': 'archives:Halloween2012TelescopeStormy.swf'
+        },
         localChanges: {
           'party/catalogue.swf': {
             en: ['archives:OperationBlackoutCatalogParty.swf', 'party_catalogue']
@@ -2024,6 +2032,10 @@ export const UPDATES_2012: Update[] = [
           'close_ups/timer.swf': {
             en: ['archives:HolidayParty2012TimerEN.swf', "w.p1212.holiday.avatar.timerPopup"]
           }
+        },
+        globalChanges: {
+          'telescope/telescope.swf': 'archives:Telescope-HolidayParty2015.swf',
+          'binoculars/empty.swf': 'archives:Binoculars-HolidayParty2015.swf'
         },
         fileChanges: {
           'play/v2/content/global/content/interface.swf': 'archives:ClientInterfaceHolidayParty2012.swf',

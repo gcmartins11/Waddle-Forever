@@ -2249,7 +2249,8 @@ export const UPDATES_2011: Update[] = [
         },
         globalChanges: {
           'scavenger_hunt/scavenger_hunt.swf': 'archives:CandyGhostScavengerHuntScavenger_hunt.swf',
-          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf'
+          'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf',
+          'binoculars/empty.swf': 'archives:Halloween2012BinocularsStormy.swf'
         },
         startscreens: [ 'archives:HalloweenParty2011PreStartBillboards.swf', 'archives:HalloweenParty2011StartBillboards.swf' ],
         scavengerHunt2011: {
