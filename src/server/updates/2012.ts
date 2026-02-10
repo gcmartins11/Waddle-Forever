@@ -1539,7 +1539,8 @@ export const UPDATES_2012: Update[] = [
       plaza: 'archives:RoomsPlaza_2-Play8.swf'
     },
     music: {
-      pizza: 344
+      pizza: 344,
+      shop: 321
     },
     stagePlay: {
       name: 'Ruby and the Ruby',
@@ -1897,9 +1898,6 @@ export const UPDATES_2012: Update[] = [
       rink: 'archives:RoomsRink-Dec2011.swf',
 
       stage: 'archives:ENRoomsStage-Dec2012.swf'
-    },
-    music: {
-      shop: 321
     },
     stagePlay: {
       name: 'A Humbug Holiday',
