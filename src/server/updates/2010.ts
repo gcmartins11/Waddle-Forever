@@ -850,7 +850,8 @@ export const UPDATES_2010: Update[] = [
       // interface with EPF phone
       'play/v2/client/interface.swf': 'recreation:interfaces/2010_may.swf',
       'play/v2/client/shell.swf': 'approximation:shell.swf',
-      'play/v2/client/load.swf': 'archives:ClientLoad2010-11-25.swf'
+      'play/v2/client/load.swf': 'archives:ClientLoad2010-11-25.swf',
+      'play/v2/client/login.swf': 'archives:ClientLoginDec2009.swf'
     },
     localChanges: {
       'forms/moderator.swf': {
