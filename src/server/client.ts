@@ -1123,9 +1123,9 @@ export class Client {
     }
   }
 
-  update (): void {
+  update (forceSave?: boolean): void {
     if (!this.isBot) {
-      this.penguin.update()
+      this.penguin.update(forceSave)
     }
   }
 

@@ -181,13 +181,13 @@ commands.add('powercards', [], (client) => {
 });
 
 commands.add('nosave', [], (client) => {
-  client.penguin.allowSave();
-  client.update();
   client.penguin.disableSave();
+  client.update(true);
 });
 
 commands.add('enablesave', [], (client) => {
   client.penguin.allowSave();
+  client.update();
 });
 
 /** A given action for a bot group */

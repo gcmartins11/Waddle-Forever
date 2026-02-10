@@ -813,8 +813,8 @@ export class Penguin {
     this._noSave = true;
   }
 
-  update() {
-    if (!this._noSave) {
+  update(forceSave?: boolean) {
+    if (forceSave === true || !this._noSave) {
       db.update<PenguinData>(Databases.Penguins, this.id, this.serialize());
     }
   }
