@@ -221,6 +221,9 @@ export const UPDATES_2012: Update[] = [
         },
         mapNote: 'archives:RockhoppersQuestParty_map_note.swf'
       }
+    },
+    globalChanges: {
+      'telescope/telescope.swf': 'archives:TelescopeEmpty.swf'
     }
   },
   {
