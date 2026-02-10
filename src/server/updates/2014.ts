@@ -2,6 +2,15 @@ import { Update } from ".";
 
 export const UPDATES_2014: Update[] = [
   {
+    date: '2014-05-14',
+    rooms: {
+      lake: 'archives:RoomsLake-May2014.swf'
+    },
+    music: {
+      lake: 666
+    }
+  },
+  {
     date: '2014-06-01',
     dateReference: 'vr-room'
   },

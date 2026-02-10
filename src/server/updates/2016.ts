@@ -85,7 +85,6 @@ export const UPDATES_2016: Update[] = [
       boxdimension: 372,
       dojofire: 405,
       cavemine: 532,
-      lake: 666,
       dojowater: 406
     },
     map: 'approximation:modern_map.swf',

@@ -938,7 +938,7 @@ export const UPDATES_2010: Update[] = [
     roomComment: 'The Forest now has a path to the Hidden Lake',
     rooms: {
       forest: 'archives:RoomsForest_3.swf',
-      lake: 'slegacy:media/play/v2/content/global/rooms/lake.swf'
+      lake: 'archives:HiddenLake2011.swf'
     }
   },
   {

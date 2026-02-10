@@ -20,12 +20,16 @@ export const UPDATES_2012: Update[] = [
   },
   {
     date: '2012-01-19',
+    roomComment: 'The Hidden Lake is visually updated',
     temp: {
       const: {
         rooms: {
           beach: 'archives:UnderwaterExpeditionConstBeach.swf'
         }
       }
+    },
+    rooms: {
+      lake: 'archives:RoomsLake-Early2012.swf'
     },
     furnitureCatalog: 'archives:JanFeb2012Furniture.swf'
   },
