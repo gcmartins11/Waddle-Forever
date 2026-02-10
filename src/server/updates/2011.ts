@@ -2729,6 +2729,8 @@ export const UPDATES_2011: Update[] = [
       dojoext: 'archives:RoomsDojoext_4.swf',
       dojofire: 'archives:RoomsFireDojo_2.swf',
       dojohide: 'archives:RoomsDojohide_4.swf',
+      mtn: 'archives:RoomsMtn-November2011.swf',
+      dojowater: 'archives:RoomsDojowater-Nov2011.swf',
 
       town: 'archives:RoomsTown_3.swf',
       rink: 'archives:RoomsRink-Dec2011.swf',
