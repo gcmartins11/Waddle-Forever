@@ -1340,6 +1340,8 @@ export const UPDATES_2009: Update[] = [
   },
   {
     date: '2009-08-05',
+    // in this shell, the penguin string changes
+    dateReference: 'string-verify',
     fileChanges: {
       'play/v2/client/shell.swf': 'archives:ClientShell2009-08-05.swf'
     }

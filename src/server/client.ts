@@ -1001,10 +1001,13 @@ export class Client {
     if (isEngine1(this.version)) {
       return Client.engine1Crumb(this.penguin, { x: this.x, y: this.y, frame: this.frame });
     } else {
+      // meant to be approval, but always approved (1), TODO: non approved names in the future
+      const approval = isGreaterOrEqual(this.version, getDate('string-verify')) ? [1] : []
+
       return [
         this.penguin.id,
         this.name,
-        1, // meant to be approval, but always approved, TODO: non approved names in the future
+        ...approval, 
         this.penguin.color,
         this.penguin.head,
         this.penguin.face,

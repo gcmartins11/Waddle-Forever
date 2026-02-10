@@ -274,7 +274,8 @@ export type DateReference = 'cpip' |
   'stamps-release' |
   'placeholder-2016' |
   'vr-room' |
-  'old-rink';
+  'old-rink' |
+  'string-verify';
 
 export type Update = {
   date: Version;
