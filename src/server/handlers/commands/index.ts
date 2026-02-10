@@ -198,6 +198,21 @@ commands.add('safechat', [], (client) => {
   }
 });
 
+commands.add('amulet', ['string'], (client, element) => {
+  switch (element) {
+    case 'fire':
+      client.penguin.isFireNinja = !client.penguin.isFireNinja;
+      break;
+    case 'water':
+      client.penguin.isWaterNinja = !client.penguin.isWaterNinja;
+      break;
+    case 'snow':
+      client.penguin.isSnowNinja = !client.penguin.isSnowNinja;
+      break;
+  }
+  client.update();
+});
+
 /** A given action for a bot group */
 type BotAction = {
   action: 'spawn';

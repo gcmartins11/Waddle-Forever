@@ -487,6 +487,11 @@ export interface PenguinData {
   medieval2012Message?: number;
   noSave?: boolean;
   safeChat?: boolean;
+
+  /** Temporary data for cheaters who want the amulet to be completed */
+  fireNinja?: boolean;
+  waterNinja?: boolean;
+  snowNinja?: boolean;
 }
 
 export default db;

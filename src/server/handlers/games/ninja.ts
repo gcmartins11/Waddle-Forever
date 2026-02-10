@@ -8,7 +8,14 @@ const handler = new Handler();
 
 // get ninja rank
 handler.xt(Handle.GetNinjaRanks, (client) => {
-  client.sendXt('gnr', client.penguin.id, client.penguin.ninjaProgress.rank, 0, 0, 0);
+  client.sendXt(
+    'gnr',
+    client.penguin.id,
+    client.penguin.ninjaProgress.rank,
+    client.penguin.isFireNinja ? 5 : 0,
+    client.penguin.isWaterNinja ? 5 : 0,
+    client.penguin.isSnowNinja ? 13 : 0
+  );
 });
 
 // get card-jitsu level

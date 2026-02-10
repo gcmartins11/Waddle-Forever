@@ -67,6 +67,10 @@ export class Penguin {
   private _noSave: boolean;
   private _safeChat: boolean;
 
+  private _isFireNinja: boolean;
+  private _isWaterNinja: boolean;
+  private _isSnowNinja: boolean;
+
   constructor(id: number, data: PenguinData) {
     this._id = id;
     this._name = data.name;
@@ -126,6 +130,9 @@ export class Penguin {
     this._medieval2012Message = data.medieval2012Message ?? 0;
     this._noSave = data.noSave ?? false;
     this._safeChat = data.safeChat ?? false;
+    this._isFireNinja = data.fireNinja ?? false;
+    this._isWaterNinja = data.waterNinja ?? false;
+    this._isSnowNinja = data.snowNinja ?? false;
   }
 
   serialize(): PenguinData {
@@ -184,7 +191,10 @@ export class Penguin {
       virtualRegistrationTimestamp: this._virtualRegistrationTimestamp,
       medieval2012Message: this._medieval2012Message,
       noSave: this._noSave,
-      safeChat: this._safeChat
+      safeChat: this._safeChat,
+      fireNinja: this._isFireNinja,
+      waterNinja: this._isWaterNinja,
+      snowNinja: this._isSnowNinja
     }
   }
 
@@ -728,6 +738,30 @@ export class Penguin {
 
   setBattleOfDoomCompleted() {
     this._battleOfDoom = true;
+  }
+
+  get isFireNinja() {
+    return this._isFireNinja;
+  }
+
+  set isFireNinja(value: boolean) {
+    this._isFireNinja = value;
+  }
+
+  get isWaterNinja() {
+    return this._isWaterNinja;
+  }
+
+  set isWaterNinja(value: boolean) {
+    this._isWaterNinja = value;
+  }
+
+  get isSnowNinja() {
+    return this._isSnowNinja;
+  }
+
+  set isSnowNinja(value: boolean) {
+    this._isSnowNinja = value;
   }
 
   static getDefaultData(name: string, defaultParams: DefaultPenguinParams = {}): PenguinData {
