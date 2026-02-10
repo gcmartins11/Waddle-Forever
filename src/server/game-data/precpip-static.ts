@@ -142,7 +142,7 @@ export const PRE_CPIP_STATIC_FILES: Record<string, string> = {
   'games/mine/mine.swf': 'fix:CartSurfer2006.swf',
   'games/mine.swf': 'fix:CartSurfer2006.swf',
   'games/waves/game.swf': 'archives:CatchinWavesGame.swf',
-  'artwork/tools/telescope0.swf': 'slegacy:media/play/v2/content/global/telescope/empty.swf',
+  'artwork/tools/telescope0.swf': 'archives:TelescopeEmpty2010.swf',
   'games/quests/q1/quest.swf': 'slegacy:media/play/v2/games/quests/q1/quest.swf',
   'games/quests/q1/common/misc/items.swf': 'slegacy:media/play/v2/games/quests/q1/common/misc/items.swf',
   'games/quests/q1/common/misc/items2.swf': 'slegacy:media/play/v2/games/quests/q1/common/misc/items2.swf',
