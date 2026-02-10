@@ -1080,7 +1080,10 @@ export const UPDATES_2008: Update[] = [
       hidden: true
     },
     gameMusic: {
-      fish: 103
+      fish: 103,
+      cart: 105,
+      roundup: 102,
+      thinice: 111
     }
   },
   {
