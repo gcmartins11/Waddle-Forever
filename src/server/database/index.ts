@@ -486,6 +486,7 @@ export interface PenguinData {
   battleOfDoom: boolean;
   medieval2012Message?: number;
   noSave?: boolean;
+  safeChat?: boolean;
 }
 
 export default db;

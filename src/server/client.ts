@@ -1495,7 +1495,7 @@ export class Client {
 
     const virtualDate = this.server.getVirtualDate(0);
     
-    this.sendXt('lp', this.penguinString, String(this.penguin.coins), 0, 1440, virtualDate.getTime(), this.age, 0, this.penguin.minutesPlayed, -1, 7, 1, 4, 3);
+  this.sendXt('lp', this.penguinString, String(this.penguin.coins), this.penguin.isSafeChat ? 1 : 0, 1440, virtualDate.getTime(), this.age, 0, this.penguin.minutesPlayed, -1, 7, 1, 4, 3);
   }
 
   getFurnitureString(): string {

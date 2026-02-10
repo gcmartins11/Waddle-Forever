@@ -65,6 +65,7 @@ export class Penguin {
   private _battleOfDoom: boolean;
   private _medieval2012Message: number;
   private _noSave: boolean;
+  private _safeChat: boolean;
 
   constructor(id: number, data: PenguinData) {
     this._id = id;
@@ -124,6 +125,7 @@ export class Penguin {
     this._virtualRegistrationTimestamp = data.virtualRegistrationTimestamp;
     this._medieval2012Message = data.medieval2012Message ?? 0;
     this._noSave = data.noSave ?? false;
+    this._safeChat = data.safeChat ?? false;
   }
 
   serialize(): PenguinData {
@@ -181,7 +183,8 @@ export class Penguin {
       battleOfDoom: this._battleOfDoom,
       virtualRegistrationTimestamp: this._virtualRegistrationTimestamp,
       medieval2012Message: this._medieval2012Message,
-      noSave: this._noSave
+      noSave: this._noSave,
+      safeChat: this._safeChat
     }
   }
 
@@ -375,6 +378,18 @@ export class Penguin {
 
   get minutesPlayed() {
     return this._minutesPlayed;
+  }
+
+  get isSafeChat() {
+    return this._safeChat;
+  }
+
+  enableSafeChat() {
+    this._safeChat = true;
+  }
+
+  disableSafeChat() {
+    this._safeChat = true;
   }
 
   receivePostcard(postcard: number, info: {

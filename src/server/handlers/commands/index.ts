@@ -190,6 +190,14 @@ commands.add('enablesave', [], (client) => {
   client.update();
 });
 
+commands.add('safechat', [], (client) => {
+  if (client.penguin.isSafeChat) {
+    client.penguin.disableSafeChat();
+  } else {
+    client.penguin.enableSafeChat();
+  }
+});
+
 /** A given action for a bot group */
 type BotAction = {
   action: 'spawn';
