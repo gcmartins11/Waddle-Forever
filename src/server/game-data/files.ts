@@ -2032,6 +2032,10 @@ Unknown if its teleporting to village functions would be accurate`
     {
       file: 'help.swf',
       comment: 'Made by lifeofgames477'
+    },
+    {
+      file: 'telescope_holiday.swf',
+      comment: 'Made by ItzAle, from the 2012 telescope as a base'
     }
   ],
   [MOD]: [
