@@ -1946,7 +1946,8 @@ export const UPDATES_2009: Update[] = [
         },
         globalChanges: {
           'rooms/NOTLS3EN.swf': 'archives:RoomsNOTLS3EN-HalloweenParty2009.swf',
-          'scavenger_hunt/hunt_ui.swf': ['recreation:halloween_2009/hunt_ui.swf', 'halloween_hunt']
+          'scavenger_hunt/hunt_ui.swf': ['recreation:halloween_2009/hunt_ui.swf', 'halloween_hunt'],
+          'telescope/empty.swf': 'unknown:halloween_telescope.swf'
         },
         scavengerHunt2010: {
           iconFileId: 'recreation:halloween_2008/hunt_icon.swf'
@@ -2268,7 +2269,10 @@ export const UPDATES_2009: Update[] = [
           village: 254,
           party: 281
         },
-        startscreens: ['archives:StartscreenChristmas-HolidayParty2009.swf']
+        startscreens: ['archives:StartscreenChristmas-HolidayParty2009.swf'],
+        globalChanges: {
+          'telescope/empty.swf': 'recreation:telescope_holiday.swf'
+        }
       }
     }
   },

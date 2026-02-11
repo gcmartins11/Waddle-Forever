@@ -3608,6 +3608,9 @@ export const UPDATES_2010: Update[] = [
             'en': 'archives:2010coinsforchangedonate.swf'
           }
         },
+        globalChanges: {
+          'telescope/empty.swf': 'recreation:telescope_holiday.swf'
+        },
         music: {
           'attic': 255,
           'beach': 254,
