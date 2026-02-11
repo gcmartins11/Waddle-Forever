@@ -750,13 +750,14 @@ export const UPDATES_2012: Update[] = [
     temp: {
       const: {
         rooms: {
-          'dock': 'archives:MarvelSuperheroTakeoverConsDock.swf',
-
-          rink: 'archives:RoomsRink-Mar2013.swf',
-          forts: 'archives:RoomsForts_4.swf',
-          town: 'archives:RoomsTown_4.swf'
+          'dock': 'archives:MarvelSuperheroTakeoverConsDock.swf'
         }
       }
+    },
+    rooms: {
+      rink: 'archives:RoomsRink-Mar2013.swf',
+      forts: 'archives:RoomsForts_4.swf',
+      town: 'archives:RoomsTown_4.swf'
     },
     furnitureCatalog: 'archives:June2012Furniture.swf',
     sportCatalog: 'archives:Jun2012Sport.swf',
