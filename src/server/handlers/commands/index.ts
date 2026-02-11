@@ -213,6 +213,10 @@ commands.add('amulet', ['string'], (client, element) => {
   client.update();
 });
 
+commands.add('addcard', ['number', 'number'], (client, card, amount) => {
+  client.penguin.addCard(card, amount);
+});
+
 /** A given action for a bot group */
 type BotAction = {
   action: 'spawn';
