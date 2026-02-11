@@ -399,7 +399,7 @@ export class Penguin {
   }
 
   disableSafeChat() {
-    this._safeChat = true;
+    this._safeChat = false;
   }
 
   receivePostcard(postcard: number, info: {
