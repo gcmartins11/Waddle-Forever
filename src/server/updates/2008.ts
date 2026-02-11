@@ -639,7 +639,8 @@ export const UPDATES_2008: Update[] = [
       rink: 'recreation:rink_2008_sky.swf'
     },
     fileChanges: {
-      'artwork/tools/telescope0.swf': 'archives:TelescopeEmpty2010.swf'
+      'artwork/tools/telescope0.swf': 'archives:TelescopeEmpty2010.swf',
+      'artwork/tools/binoculars1.swf': 'archives:BinocularsNormal.swf'
     }
   },
   { 
@@ -1032,7 +1033,6 @@ export const UPDATES_2008: Update[] = [
       'play/v2/client/interface.swf': 'recreation:interfaces/2008_july.swf',
       'play/v2/client/login.swf': 'recreation:login_cpip.swf',
       'play/v2/client/igloo.swf': 'archives:ClientIgloo2009-04-02.swf',
-      'play/v2/content/global/binoculars/empty.swf': 'slegacy:media/play/v2/content/global/binoculars/empty.swf',
       'play/v2/content/global/telescope/empty.swf': 'archives:TelescopeEmpty2010.swf',
       'play/v2/content/global/igloo/assets/igloo_background.swf': 'slegacy:media/play/v2/content/global/igloo/assets/igloo_background.swf',
       // this puffle roundup is a placeholder, TODO needs to be updated
