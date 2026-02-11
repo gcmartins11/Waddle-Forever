@@ -637,6 +637,9 @@ export const UPDATES_2008: Update[] = [
       coffee: 'recreation:coffee_precpip_clickable_sign.swf',
       forest: 'recreation:forest_2008_sky.swf',
       rink: 'recreation:rink_2008_sky.swf'
+    },
+    fileChanges: {
+      'artwork/tools/telescope0.swf': 'archives:TelescopeEmpty2010.swf'
     }
   },
   { 
