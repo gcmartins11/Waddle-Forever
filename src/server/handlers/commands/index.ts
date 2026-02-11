@@ -196,6 +196,7 @@ commands.add('safechat', [], (client) => {
   } else {
     client.penguin.enableSafeChat();
   }
+  client.update();
 });
 
 commands.add('amulet', ['string'], (client, element) => {
@@ -215,6 +216,7 @@ commands.add('amulet', ['string'], (client, element) => {
 
 commands.add('addcard', ['number', 'number'], (client, card, amount) => {
   client.penguin.addCard(card, amount);
+  client.update();
 });
 
 /** A given action for a bot group */
