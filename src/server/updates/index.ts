@@ -232,6 +232,8 @@ export type CPUpdate = {
   /** For pre-cpip clients, in which items are stored in chat.swf, supply all items available in the chat.swf of that day */
   clientFiles?: number[];
   removeClientFiles?: number[];
+
+  dayOfFun?: 'start' | 'end';
 } & ({
   partyName: string;
   decorated?: false;

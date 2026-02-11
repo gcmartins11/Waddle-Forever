@@ -1213,6 +1213,8 @@ export const UPDATES_2009: Update[] = [
   },
   {
     date: '2009-06-26',
+    // temporary, as this is the earliest it can work at the moment
+    dayOfFun: 'start',
     fileChanges: {
       'play/v2/client/load.swf': 'fix:ClientLoad2009-06-26.swf',
       'play/v2/client/login.swf': 'fix:ClientLoginJun2009.swf',
@@ -1619,6 +1621,10 @@ export const UPDATES_2009: Update[] = [
       stage: 'archives:RoomsStage-September2009.swf',
       plaza: 'archives:RoomsPlaza-Play6.swf',
     }
+  },
+  {
+    date: '2009-09-12',
+    dayOfFun: 'end'
   },
   {
     date: '2009-09-13',
