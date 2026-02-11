@@ -1,6 +1,6 @@
 import { STARTER_DECKS } from "@server/game-logic/starter-deck";
 import { Handler } from "..";
-import { choose } from "@common/utils";
+import { choose, chooseN } from "@common/utils";
 import { Handle } from "../handles";
 import { CARDS } from "@server/game-logic/cards";
 
@@ -50,6 +50,22 @@ handler.xt(Handle.AddItem, (client, id) => {
     normalCards.forEach(card => client.penguin.addCard(card, 1));
     client.penguin.addCard(choose(powerCards), 1);
   }
+  client.update();
+});
+
+function getAllPowerCards(): number[] {
+  return CARDS.rows.filter((card) => card.powerId > 0).map(card => card.id);
+}
+
+handler.xt(Handle.BuyPowerCards, (client) => {
+  const powerCards = getAllPowerCards();
+  const cards = chooseN(powerCards, 3);
+  cards.forEach(card => {
+    client.penguin.addCard(card, 1);
+  });
+  client.penguin.removeCoins(1500);
+  
+  client.sendXt('bpc', cards.join(','), client.penguin.coins);
   client.update();
 });
 
