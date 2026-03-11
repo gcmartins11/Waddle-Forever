@@ -39,7 +39,7 @@ let mainWindow: BrowserWindow;
 
 /** An object to keep global variables in memory across windows */
 let globalSettings : GlobalSettings = {
-  multiplayer: { type: 'local' }
+  multiplayer: { type: 'guest', ip: '18.231.190.96' }
 };
 
 app.on('ready', async () => {
