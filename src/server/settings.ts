@@ -106,7 +106,7 @@ export class SettingsManager {
     this.getMods();
 
     this.settings = {
-      fps30: this.readBoolean(settingsJson, 'fps30', false),
+      fps30: this.readBoolean(settingsJson, 'fps30', true),
       thin_ice_igt: this.readBoolean(settingsJson, 'thin_ice_igt', false),
       clothing: this.readBoolean(settingsJson, 'clothing', false),
       modern_my_puffle: this.readBoolean(settingsJson, 'modern_my_puffle', false),
